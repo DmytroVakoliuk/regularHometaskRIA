@@ -10,7 +10,7 @@ for(let addres of addresses) {
     let addresObj = {};
     let addresStr = '';
     addresStr = reg.exec(addres);
-    // addresObj.street = addresStr[1];
+    addresObj.street = addresStr[1];
     addresObj.house = addresStr[2];
     addresObj.flat = addresStr[3];
     result.push(addresObj);
